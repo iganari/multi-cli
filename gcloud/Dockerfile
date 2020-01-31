@@ -2,7 +2,8 @@ ARG _TAG='278.0.0-alpine'
 FROM google/cloud-sdk:${_TAG}
 # https://hub.docker.com/r/google/cloud-sdk/
 
-MAINTAINER iganari
+RUN gcloud --quiet components update && \
+    gcloud --quiet components install beta
 
 # setting timezone
 RUN apk --update add tzdata && \
