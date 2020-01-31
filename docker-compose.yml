@@ -1,0 +1,8 @@
+version: '3'
+services:
+  gcloud:
+    build: ./gcloud/
+    container_name: multi-cli-gcloud
+    tty: true
+    # volumes:
+    #   - ./gcloud:/root/gcloud
