@@ -4,3 +4,5 @@ services:
     build: ./gcloud/
     container_name: multi-cli-gcloud
     tty: true
+    # volumes:
+    #   - ./gcloud:/root/gcloud
