@@ -25,3 +25,9 @@ bq 2.0.52
 core 2020.01.24
 gsutil 4.47
 ```
+
+## エイリアス
+
+```
+dgcp='cd ~/workspace/github/iganari/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
+```
