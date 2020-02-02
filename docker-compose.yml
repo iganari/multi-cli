@@ -4,5 +4,11 @@ services:
     build: ./gcloud/
     container_name: multi-cli-gcloud
     tty: true
-    # volumes:
-    #   - ./gcloud:/root/gcloud
+    volumes:
+      - ./gcloud:/home/gcloud
+  azure:
+    build: ./azure/
+    container_name: multi-cli-azure
+    tty: true
+    volumes:
+      - ./azure:/home/azure
