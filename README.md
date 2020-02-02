@@ -34,6 +34,6 @@ docker-compose exec azure /bin/bash
 + 短いコマンドで実行できるようエイリアスを貼っておきます。
 
 ```
-alias dgcp='cd ~/workspace/github/iganari/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
-alias  daz='cd ~/workspace/github/iganari/multi-cli && docker-compose exec azure /bin/bash  && cd -' 
+alias dgcp='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
+alias  daz='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec azure /bin/bash  && cd -' 
 ```
