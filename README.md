@@ -1,26 +1,25 @@
 # multi-cli
 
-各クラウドの CLI を Docker Compose で。
+Multi Cloud Contaner on Docker Compose.
 
-## やりたいこと
+## Want
 
-+ 各クラウドの CLI を Docker Compose で管理というか、Docker を使うことによって、ホストを汚さずに実行出来るようにしたい
-+ var は置いておく？ OR auth をやる?
+I want to be able to carry the execution environment freely by managing the CLI of each cloud with Docker Compose.
 
-## 公式ドキュメント
+## Official Document
 
-+ Overview of Docker Compose
++ Overview of Docker Compose.
   + https://docs.docker.com/compose/
 
-## 起動方法 (WIP)
+## How to Use
 
-+ Docker Compose を起動します。
++ Start Docker Compose.
 
 ```
 docker-compose up -d
 ```
 
-+ 実行方法
++ Use Container.
 
 ```
 docker-compose exec gcloud /bin/bash
@@ -28,12 +27,20 @@ docker-compose exec gcloud /bin/bash
 ```
 docker-compose exec azure /bin/bash
 ```
+```
+docker-compose exec aws /bin/bash
+```
 
-## エイリアス
+## Set Alias
 
-+ 短いコマンドで実行できるようエイリアスを貼っておきます。
++ Setting Alias on Bash for using easy.
 
 ```
-alias dgcp='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
-alias  daz='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec azure /bin/bash  && cd -' 
+alias dg='cd ${Your Repository's PATH}/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
+alias dz='cd ${Your Repository's PATH}/multi-cli && docker-compose exec azure /bin/bash  && cd -'
+alias dw='cd ${Your Repository's PATH}/multi-cli && docker-compose exec azure /bin/bash  && cd -'
 ```
+
+## Comment
+
+Have fun !! :)
