@@ -14,20 +14,26 @@
 
 ## 起動方法 (WIP)
 
++ Docker Compose を起動します。
+
 ```
-$ docker-compose up -d
-$
-$ docker-compose exec gcloud /bin/bash
-#
-# gcloud version
-Google Cloud SDK 278.0.0
-bq 2.0.52
-core 2020.01.24
-gsutil 4.47
+docker-compose up -d
+```
+
++ 実行方法
+
+```
+docker-compose exec gcloud /bin/bash
+```
+```
+docker-compose exec azure /bin/bash
 ```
 
 ## エイリアス
 
++ 短いコマンドで実行できるようエイリアスを貼っておきます。
+
 ```
-dgcp='cd ~/workspace/github/iganari/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
+alias dgcp='cd ~/workspace/github/iganari/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
+alias  daz='cd ~/workspace/github/iganari/multi-cli && docker-compose exec azure /bin/bash  && cd -' 
 ```
