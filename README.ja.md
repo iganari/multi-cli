@@ -19,13 +19,16 @@
 docker-compose up -d
 ```
 
-+ 実行方法
++ 実行方法は下記の通り。
 
 ```
 docker-compose exec gcloud /bin/bash
 ```
 ```
 docker-compose exec azure /bin/bash
+```
+```
+docker-compose exec aws /bin/bash
 ```
 
 ## エイリアス
