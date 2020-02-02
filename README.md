@@ -1,6 +1,6 @@
 # multi-cli
 
-Multi Cloud Contaner on Docker Compose
+Multi Cloud Contaner on Docker Compose.
 
 ## Want
 
@@ -8,18 +8,18 @@ I want to be able to carry the execution environment freely by managing the CLI 
 
 ## Official Document
 
-+ Overview of Docker Compose
++ Overview of Docker Compose.
   + https://docs.docker.com/compose/
 
 ## How to Use
 
-+ Start Docker Compose
++ Start Docker Compose.
 
 ```
 docker-compose up -d
 ```
 
-+ Use Container
++ Use Container.
 
 ```
 docker-compose exec gcloud /bin/bash
@@ -33,7 +33,7 @@ docker-compose exec aws /bin/bash
 
 ## Set Alias
 
-+ Setting Alias on Bash for using easy
++ Setting Alias on Bash for using easy.
 
 ```
 alias dg='cd ${Your Repository's PATH}/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
