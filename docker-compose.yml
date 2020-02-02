@@ -12,3 +12,9 @@ services:
     tty: true
     volumes:
       - ./azure:/home/azure
+  aws:
+    build: ./aws/
+    container_name: multi-cli-aws
+    tty: true
+    volumes:
+      - ./aws:/home/aws
