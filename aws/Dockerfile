@@ -14,8 +14,8 @@ RUN apk -v --update add \
     pip install --upgrade awscli==${_TAG} s3cmd==2.0.1 python-magic && \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
-VOLUME /root/.aws
-VOLUME /project
-WORKDIR /project
+# VOLUME /root/.aws
+# VOLUME /project
+WORKDIR /home/aws
 
 
