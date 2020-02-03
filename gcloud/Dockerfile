@@ -15,3 +15,5 @@ RUN apk --update add tzdata && \
 RUN apk --update add git && \
     rm -rfv /var/lib/apt/lists/* && \
     rm -rfv /var/cache/apk/*
+
+WORKDIR /home/gcloud

@@ -36,9 +36,9 @@ docker-compose exec aws /bin/bash
 + Setting Alias on Bash for using easy.
 
 ```
-alias dg='cd ${Your Repository's PATH}/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
-alias dz='cd ${Your Repository's PATH}/multi-cli && docker-compose exec azure /bin/bash  && cd -'
-alias dw='cd ${Your Repository's PATH}/multi-cli && docker-compose exec azure /bin/bash  && cd -'
+alias dg='cd ${Your Repository's PATH}/multi-cli && docker-compose exec gcloud /bin/ash && cd -' 
+alias dz='cd ${Your Repository's PATH}/multi-cli && docker-compose exec azure  /bin/ash  && cd -'
+alias dw='cd ${Your Repository's PATH}/multi-cli && docker-compose exec aws    /bin/ash  && cd -'
 ```
 
 ## Comment
