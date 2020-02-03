@@ -36,7 +36,7 @@ docker-compose exec aws /bin/bash
 + 短いコマンドで実行できるようエイリアスを貼っておきます。
 
 ```
-alias dg='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec gcloud /bin/bash && cd -' 
-alias dz='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec azure  /bin/bash  && cd -'
-alias dw='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec aws    /bin/bash  && cd -'
+alias dg='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec gcloud /bin/ash && cd -' 
+alias dz='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec azure  /bin/ash  && cd -'
+alias dw='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec aws    /bin/ash  && cd -'
 ```
