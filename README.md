@@ -22,13 +22,13 @@ docker-compose up -d
 + Use Container.
 
 ```
-docker-compose exec gcloud /bin/bash
+docker-compose exec gcloud /bin/ash
 ```
 ```
-docker-compose exec azure /bin/bash
+docker-compose exec azure /bin/ash
 ```
 ```
-docker-compose exec aws /bin/bash
+docker-compose exec aws /bin/ash
 ```
 
 ## Set Alias
