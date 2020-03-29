@@ -1,18 +1,18 @@
 version: '3'
 services:
-  gcloud:
+  multi-cli-gcloud:
     build: ./gcloud/
     container_name: multi-cli-gcloud
     tty: true
     volumes:
       - ./gcloud:/home/gcloud
-  azure:
+  multi-cli-azure:
     build: ./azure/
     container_name: multi-cli-azure
     tty: true
     volumes:
       - ./azure:/home/azure
-  aws:
+  multi-cli-aws:
     build: ./aws/
     container_name: multi-cli-aws
     tty: true
