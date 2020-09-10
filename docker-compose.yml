@@ -6,6 +6,7 @@ services:
     tty: true
     volumes:
       - ./gcloud:/home/gcloud
+      - /var/run/docker.sock:/var/run/docker.sock
   multi-cli-azure:
     build: ./azure/
     container_name: multi-cli-azure
