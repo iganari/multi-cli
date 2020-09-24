@@ -40,3 +40,9 @@ alias dg='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exe
 alias dz='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec multi-cli-azure  /bin/ash  && cd -'
 alias dw='cd ${Repositoryを置いているPATH}/multi-cli && docker-compose exec multi-cli-aws    /bin/ash  && cd -'
 ```
+
+## 補足
+
++ コンテナ内で docker コマンドを使えるようにするために、 Docker outside of Docker = DooD を採択している
+  + 参考: https://blog.nijohando.jp/post/docker-in-docker-docker-outside-of-docker/
+
