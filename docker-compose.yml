@@ -13,9 +13,12 @@ services:
     tty: true
     volumes:
       - ./azure:/home/azure
+      - /var/run/docker.sock:/var/run/docker.sock
   multi-cli-aws:
     build: ./aws/
     container_name: multi-cli-aws
     tty: true
     volumes:
       - ./aws:/home/aws
+      - /var/run/docker.sock:/var/run/docker.sock
+
