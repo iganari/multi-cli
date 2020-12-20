@@ -3,7 +3,6 @@ FROM mcr.microsoft.com/azure-cli:${_TAG}
 # https://hub.docker.com/_/microsoft-azure-cli
 # Tag List --> https://mcr.microsoft.com/v2/azure-cli/tags/list
 
-MAINTAINER iganari
 
 # OS Prepare
 # setting timezone
