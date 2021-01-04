@@ -1,6 +1,6 @@
-ARG _TAG='2.1.13'
+ARG _TAG='2.1.15'
 FROM amazon/aws-cli:${_TAG}
 # Tag List --> https://hub.docker.com/r/amazon/aws-cli/tags?ordering=last_updated
 
-# CMD ["bash"]
 ENTRYPOINT /bin/bash
+
