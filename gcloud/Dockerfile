@@ -1,4 +1,4 @@
-ARG _TAG='329.0.0-alpine'
+ARG _TAG='336.0.0-alpine'
 FROM google/cloud-sdk:${_TAG}
 # https://hub.docker.com/r/google/cloud-sdk/
 # Tag List --> https://hub.docker.com/r/google/cloud-sdk/tags?page=1&name=alpine
@@ -17,8 +17,8 @@ RUN apk --update add git && \
     rm -rfv /var/lib/apt/lists/* && \
     rm -rfv /var/cache/apk/*
 
-# RUN gcloud --quiet components update && \
-#     gcloud --quiet components install beta && \
-#     gcloud --quiet components install kubectl
+RUN gcloud --quiet components update && \
+    gcloud --quiet components install beta && \
+    gcloud --quiet components install kubectl
 
 WORKDIR /home/gcloud
