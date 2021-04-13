@@ -17,8 +17,8 @@ RUN apk --update add git && \
     rm -rfv /var/lib/apt/lists/* && \
     rm -rfv /var/cache/apk/*
 
-# RUN gcloud --quiet components update && \
-#     gcloud --quiet components install beta && \
-#     gcloud --quiet components install kubectl
+RUN gcloud --quiet components update && \
+    gcloud --quiet components install beta && \
+    gcloud --quiet components install kubectl
 
 WORKDIR /home/gcloud
