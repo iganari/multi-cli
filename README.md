@@ -16,7 +16,7 @@ I want to be able to carry the execution environment freely by managing the CLI 
 + Start Docker Compose.
 
 ```
-docker-compose up -d
+docker-compose up -d --build
 ```
 
 + Use Container.
